@@ -44,8 +44,8 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl border-b border-surface-container-high/40 transition-colors">
-      <div className="h-14 w-full max-w-[1500px] mx-auto px-margin-mobile sm:px-gutter lg:px-gutter-lg flex items-center justify-between gap-space-lg">
-        
+      <div className="h-14 w-full max-w-[1500px] mx-auto px-margin-mobile sm:px-gutter lg:px-gutter-lg flex items-center justify-between gap-space-sm md:gap-space-lg">
+
         {/* Brand */}
         <div className="flex items-center gap-space-md shrink-0">
           <a
@@ -63,61 +63,55 @@ export function Navbar() {
         {/* Center Nav Links */}
         <nav className="hidden lg:flex items-center gap-1 bg-surface-container-lowest p-[3px] rounded-lg border border-surface-container-high/40">
           <a
-            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${
-              activeSection === "featured-projects"
-                ? "text-primary bg-surface-container-high font-medium"
-                : "text-on-surface-variant hover:text-on-surface"
-            }`}
+            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${activeSection === "featured-projects"
+              ? "text-primary bg-surface-container-high font-medium"
+              : "text-on-surface-variant hover:text-on-surface"
+              }`}
             href="#featured-projects"
           >
             Featured Work
           </a>
           <a
-            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${
-              activeSection === "ask-utkarsh"
-                ? "text-primary bg-surface-container-high font-medium"
-                : "text-on-surface-variant hover:text-on-surface"
-            }`}
+            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${activeSection === "ask-utkarsh"
+              ? "text-primary bg-surface-container-high font-medium"
+              : "text-on-surface-variant hover:text-on-surface"
+              }`}
             href="#ask-utkarsh"
           >
             Ask Utkarsh AI
           </a>
           <a
-            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${
-              activeSection === "evolution"
-                ? "text-primary bg-surface-container-high font-medium"
-                : "text-on-surface-variant hover:text-on-surface"
-            }`}
+            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${activeSection === "evolution"
+              ? "text-primary bg-surface-container-high font-medium"
+              : "text-on-surface-variant hover:text-on-surface"
+              }`}
             href="#evolution"
           >
             Journey
           </a>
           <a
-            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${
-              activeSection === "stack"
-                ? "text-primary bg-surface-container-high font-medium"
-                : "text-on-surface-variant hover:text-on-surface"
-            }`}
+            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${activeSection === "stack"
+              ? "text-primary bg-surface-container-high font-medium"
+              : "text-on-surface-variant hover:text-on-surface"
+              }`}
             href="#stack"
           >
             Stack
           </a>
           <a
-            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${
-              activeSection === "case-studies"
-                ? "text-primary bg-surface-container-high font-medium"
-                : "text-on-surface-variant hover:text-on-surface"
-            }`}
+            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${activeSection === "case-studies"
+              ? "text-primary bg-surface-container-high font-medium"
+              : "text-on-surface-variant hover:text-on-surface"
+              }`}
             href="#case-studies"
           >
             Case Studies
           </a>
           <a
-            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${
-              activeSection === "principles"
-                ? "text-primary bg-surface-container-high font-medium"
-                : "text-on-surface-variant hover:text-on-surface"
-            }`}
+            className={`px-3 py-1 font-body-sm text-body-sm rounded transition-colors ${activeSection === "principles"
+              ? "text-primary bg-surface-container-high font-medium"
+              : "text-on-surface-variant hover:text-on-surface"
+              }`}
             href="#principles"
           >
             Philosophy
@@ -126,14 +120,14 @@ export function Navbar() {
 
         {/* Right Actions & Utilities */}
         <div className="flex items-center gap-space-sm shrink-0">
-          
+
           {/* Ask AI Command Button */}
           <button
             onClick={handleAskAIClick}
-            className="group flex items-center gap-space-sm px-3 py-1.5 rounded-lg bg-surface-container-lowest border border-primary-container/40 hover:border-primary-container shadow-[0_0_12px_-4px_rgba(0,240,255,0.25)] hover:shadow-[0_0_16px_rgba(0,240,255,0.35)] transition-all cursor-pointer"
+            className="group flex items-center gap-space-sm px-2 py-0.5 md:px-3 md:py-1.5 rounded-lg bg-surface-container-lowest border border-primary-container/40 hover:border-primary-container shadow-[0_0_12px_-4px_rgba(0,240,255,0.25)] hover:shadow-[0_0_16px_rgba(0,240,255,0.35)] transition-all cursor-pointer"
             title="Ask AI (⌘K)"
           >
-            <span className="material-symbols-outlined text-[15px] text-primary-container">psychology</span>
+            <span className="material-symbols-outlined text-[11px] md:text-[15px] text-primary-container">psychology</span>
             <span className="font-code-sm text-code-sm text-primary group-hover:text-primary-container font-medium">
               Ask AI
             </span>
@@ -164,7 +158,7 @@ export function Navbar() {
 
           {/* Resume CTA */}
           <a
-            className="px-2.5 py-1 rounded bg-primary-container/10 border border-primary-container/30 text-primary-container hover:bg-primary-container hover:text-on-primary font-code-sm text-code-sm font-medium transition-all inline-flex items-center gap-1"
+            className="px-1 py-0.5 md:px-2.5 md:py-1 rounded bg-primary-container/10 border border-primary-container/30 text-primary-container hover:bg-primary-container hover:text-on-primary font-code-sm text-code-sm font-medium transition-all inline-flex items-center gap-1"
             href={PERSONAL_INFO.resumeUrl}
             target="_blank"
             rel="noopener noreferrer"

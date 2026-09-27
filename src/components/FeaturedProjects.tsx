@@ -261,7 +261,7 @@ export function FeaturedProjects() {
             {/* Code Excerpt preview if project has codeSnippet (RepoPilot) */}
             {project.codeSnippet && (
               <div className="bg-surface-container-lowest rounded-xl p-4 border border-surface-container-high/60 flex flex-col justify-between font-code-sm text-code-sm shadow-inner">
-                <div className="flex items-center justify-between pb-3 border-b border-surface-container-high/40">
+                <div className="flex md:flex-row flex-col items-center justify-between pb-3 border-b border-surface-container-high/40">
                   <div className="flex items-center gap-2">
                     <span className="w-2.5 h-2.5 rounded-full bg-error/70"></span>
                     <span className="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>

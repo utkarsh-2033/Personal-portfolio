@@ -20,7 +20,7 @@ export function ResumeContact() {
       {/* Minimalist Document Resume Preview Card (2 cols) */}
       <div className="lg:col-span-2 bg-surface-container-low p-6 sm:p-7 rounded-xl flex flex-col justify-between border border-surface-container-high/60 shadow-xl transition-all">
         <div className="flex flex-col gap-4">
-          <div className="flex items-center justify-between pb-3 border-b border-surface-container-high/50">
+          <div className="flex md:flex-row flex-col items-center justify-between pb-3 border-b border-surface-container-high/50">
             <div className="flex items-center gap-2">
               <span className="material-symbols-outlined text-primary-container text-[20px]">
                 description
